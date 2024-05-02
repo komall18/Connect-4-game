@@ -1,0 +1,37 @@
+.container {
+    text-align: center;
+    width: 365px; /* Adjust this to control the size of the square */
+    height: 350px; /* Adjust this to control the size of the square */
+    margin: auto;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 2px;
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+    margin: 20px auto;
+}
+
+.board div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ecf0f1;
+}
+
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #27ae60;
+}
